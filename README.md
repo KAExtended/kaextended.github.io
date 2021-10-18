@@ -1,2 +1,3 @@
 # kaextended.github.io
-Official site for KA Extended. We are not affiliated with "Khan Academy," but we offer supplementary material to go alongside the learning experience on the site.
+Official site for KA Extended. (Note: We are not affiliated with the [Khan Academy](https://www.khanacademy.org/) organization.) We offer supplementary material to go alongside the learning experience on the site. This site was created by Khan Academy user [Hunter R. Shaw](https://www.khanacademy.org/profile/HunterRShaw/projects) in early 2021.
+> I have dedicated my time on the internet to spreading knowledge as is the utmost responsibility of those with it. Going on seven hundred fifty answers in the Khan Academy discussion forums, it is my pride and joy to use the platform for good.
