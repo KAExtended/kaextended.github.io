@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>KA FAQ | KA Extended</title>
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://cdn.glitch.com/b5b37580-b823-4d3b-bb9e-76df0c4d2bd1%2Ffavicon-32x32.png?v=1608608611475"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://cdn.glitch.com/b5b37580-b823-4d3b-bb9e-76df0c4d2bd1%2Ffavicon-16x16.png?v=1608608617558"
+  />
+  <meta content="Khan Academy FAQ" property="og:title">
+  <meta content="Great for answering common, and easy questions. Now with a search tool! (Or just use CTRL+F.)">
+  <meta content="KA Extended" property="og:site_name">
+  <meta content="https://cdn.glitch.com/b5b37580-b823-4d3b-bb9e-76df0c4d2bd1%2FNGGreen.png?v=1608608534032" property="og:image">
+  <style>
+    /* Hide scrollbar for Chrome, Brave, and Safari */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    nav::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+      -ms-overflow-style: none;  /* IE and Edge (ew)*/
+      scrollbar-width: none;  /* Firefox */
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    nav {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .hrs-blue {
+        background-color: #003;
+        color: white;
+    }
+    .hrs-black {
+      background-color: rgb(20, 20, 20) !important;
+      color: white;
+    }
+    .w3-container {
+      margin: 0% 10% 0% 10%;
+      font-size: 1vw;
+    }
+    .hrs-under {
+      background: linear-gradient(to right, #000044, #006400);
+      width: 100%;
+      height: 3px;
+    }
+    p a {
+      color: #00D000;
+      text-decoration: none;
+    }
+    p a:hover {
+      color: #00FF00;
+    }
+    h2 {
+      font-size: 2vw;
+    }
+    h3 {
+      font-size: 1vw;
+    }
+    blockquote {
+      display: block;
+      font-size: 1vw;
+      background: linear-gradient(to right, #000044, #006400);
+      padding: 1.5em 1.5em 1.5em;
+      margin: 2em 2em;
+      position: relative;
+      border-radius: 20px;
+    }
+    blockquote:before {
+      content: '\201C';
+      position: absolute;
+      top: -5%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+      background-color: #0000;
+      width: 3rem;
+      height: 2rem;
+      font: 6em/1.08em 'PT Sans', sans-serif;
+      color: #666;
+      text-align: center;
+    }
+    blockquote:after {
+      content: '\201D';
+      position: absolute;
+      top: 95%;
+      left: 100%;
+      transform: translate(-50%, -50%);
+      background-color: #0000;
+      width: 3rem;
+      height: 2rem;
+      font: 6em/1.08em 'PT Sans', sans-serif;
+      color: #666;
+      text-align: center;
+    }
+    .w3-light-grey {
+      background-color: rgb(20, 20, 20) !important;
+      border: solid white 2px;
+      color: white !important;
+    }
+  </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-center hrs-blue" style="margin-top:64px" id="sidebarWrapper"></nav>
 
+    <!-- Header -->
+    <div class="hrs-black w3-top w3-bar hrs-black w3-wide w3-padding w3-card" style="background: linear-gradient(to right, #000044, #006400);
+">
+      <a href="#home" class="w3-bar-item" style="line-height: 32px; text-decoration: none;"><img style="margin-right: 10px; margin-left: -25px;" src="https://cdn.discordapp.com/attachments/848025447665106966/899564063665848340/unknown.png" height="40px;">Extended</a>
+    </div>
+    <!-- Main container -->
+    <div style="margin-left: 200px" class="hrs-black">
+      <!-- Page Start -->
+      
+      <!-- About -->
+      <div id="about" class="hrs-black w3-container w3-padding-32">
+        <h2 class="w3-padding-16">About</h2>
+        <p>Khan Academy has some frequently occurring questions that are irritating (but easy) to answer. Worry no more. Our team has compiled an extensive list of FAQ's below. Feel free to use the search feature, or just enable "display all" and use CTRL+F. We have included relevant tags on each question for even better searching.</p>
+      </div>
+      
+      </div>
+    </div>
+      <script src="sidebar.js"></script>
+      <script>
+        //sidebarContent contains all the information for the sidebar in one JS file for easy editing
+        var sidebarWrapper = document.getElementById("sidebarWrapper");
+        sidebarContent.forEach(e => {
+          if(e.type === "cat") {sidebarWrapper.innerHTML += '<a href="' + e.address + '" class="w3-bar-item w3-button w3-padding-small w3-left-align hrs-blue category"><p><strong>' + e.name + ':</strong></p></a>';}
+          else if(e.type === "subcat") {sidebarWrapper.innerHTML += '<a href="' + e.address + '" class="w3-bar-item w3-button w3-padding-small w3-left-align hrs-blue category"><p>' + e.name + '</p></a>';}
+          else if(e.type === "contact") {sidebarWrapper.innerHTML += '<a href="' + e.address + '" class="w3-bar-item w3-button w3-padding-small w3-left-align hrs-blue category"><p><strong>' + e.name + '</strong></p></a>';}
+        });
+
+        sidebarWrapper.innerHTML += "<br><br><br><br>";
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 10000);    
+        }
+      </script>
+  </body>
+</html>
