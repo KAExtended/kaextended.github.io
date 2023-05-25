@@ -124,7 +124,7 @@
     <!-- Main container -->
     <div style="margin-left: 200px" class="hrs-black">
       <!-- Page Start -->
-      
+      <br><br><br><br>
       <!-- About -->
       <div id="about" class="hrs-black w3-container w3-padding-32">
         <h2 class="w3-padding-16">About</h2>
@@ -133,7 +133,7 @@
       
       </div>
     </div>
-      <script src="sidebar.js"></script>
+      <script src="/sidebar.js"></script>
       <script>
         //sidebarContent contains all the information for the sidebar in one JS file for easy editing
         var sidebarWrapper = document.getElementById("sidebarWrapper");
@@ -144,21 +144,6 @@
         });
 
         sidebarWrapper.innerHTML += "<br><br><br><br>";
-
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 10000);    
-        }
       </script>
   </body>
 </html>
